@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <nav>
+        <button name="Don't push" id="dont-push">Don't push this button</button>
+    </nav>
+
+    <header>
+        <h1 class="title">Art tells the story of the world. Walk With Me...</h1>
+        <div class="quote-box">
+            <h2 class="quote">Artwork compliments of the Chicago Art Institute.</h2>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery_item gallery_item-1"  onclick="clickedEvent(0)">
+                        <img src="static/Nightlife.jpg" alt="117266" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-2" id="fig2" onclick="clickedEvent(1)">
+                        <img src="static/Shiva.jpg" alt="24548" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-3" id="fig3" onclick="clickedEvent(2)">
+                        <img src="static/Towards_identity.jpg" alt="154129" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-4" id="fig4" onclick="clickedEvent(3)">
+                        <img src="static/A_Boy.jpg" alt="186468" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-5" id="fig5" onclick="clickedEvent(4)">
+                        <img src="static/amphora-storage-jar.jpg" alt="52198" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-6" id="fig6" onclick="clickedEvent(5)">
+                        <img src="static/Do_tell.jpg" alt="159830" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-7" id="fig7" onclick="clickedEvent(6)">
+                        <img src="static/Born-hip.jpg" alt="125545" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                    <figure class="gallery_item gallery_item-8" id="fig8" onclick="clickedEvent(7)">
+                        <img src="static/veranda.jpg" alt="102611" class="gallery_img">
+                        <button id="openModalBtn">Open</button>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalArtistInfo">
+                    <h3>Title</h3>
+                    <div id="modalTitle"></div>
+                </div>
+                <div>
+                    <h3>Published</h3>
+                    <div id="modalPublished"></div>
+                </div>
+                <div>
+                    <h3>Artist</h3>
+                    <div id="modalArtist"></div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+
+    </footer>
+<script src="main1.js"></script>
+</body>
+</html>
